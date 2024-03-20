@@ -1,2 +1,0 @@
-print ("lula")
-print("bolsonaro")
