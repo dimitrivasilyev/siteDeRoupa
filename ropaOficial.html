@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByWonder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.txt" defer></script>
     <style>
         * {
-            margin: 2;
+            margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
@@ -24,8 +26,8 @@
         nav {
             display: flex;
             gap: 80px;
-            justify-content: left;
-            padding-left: 6%;
+            justify-content: center;
+            padding-right: 20%;
 
         }
 
@@ -71,13 +73,14 @@
   border-radius:0 7px 7px 0;
   width: 75px;
   font-weight:bold;
-  background: white
+  background: white 
 }
 
 #divBusca img{
   float:left;
  
 }
+
     </style>
 </head>
 
@@ -93,7 +96,7 @@
                 <input type="text" id="txtBusca" placeholder="Buscar..."/>
                 <button id="btnBusca">Buscar</button>   
             </div>
-            <a href="ropa.html">Home</a>
+            <a href="ropaOficial.html">Home</a>
             <a href="calcados.html">Calçados</a>
             <a href="camiseta.html">Camisetas</a>
             <a href="calça.html">Calça</a>
@@ -102,9 +105,17 @@
        
     </header>
     <div id="area-postagens">
-        <div id="area-principal">
-        </div>
-    </div>
+        <div class="container-slider">
+            <button id="prev-button"><img src="arrow.png" alt="prev-button"></button>
+            <div class="container-images">
+              <img src="gt1.jpg" class="slider">
+              <img src="gt2.jpg" class="slider on">
+              <img src="gt3.jpg" class="slider">
+            </div>
+            <button id="next-button"><img src="arrow.png" alt="next-button"></button>
+          </div>
+    <div id="area-principal">
+        
+        
 </body>
-
 </html>
